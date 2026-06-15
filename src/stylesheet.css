@@ -23,7 +23,9 @@
 }
 
 .justified {
-  height: auto; justify-content:center; display: flex;
+  height: auto;
+  justify-content:center;
+  display: flex;
   align-items: center;
 }
 
@@ -53,6 +55,7 @@ button {
 #tabBar {
   backdrop-filter: blur(10px);
   width: 100%;
+  justify-content:space-between !important;
 }
 
 #windowContainer {
@@ -93,4 +96,24 @@ button {
     opacity: 1;
     width: 100;
   }
+}
+
+#info {
+  display: flex;
+  justify-self: flex-end;
+  align-items: flex-end;
+  align-self: flex-end;
+}
+
+#omnibox {
+  outline: 1px solid var(--secondary-color);
+  border-radius: 5px;
+}
+
+#urlBox {
+  color: #fff;
+  outline: none;
+  background: none;
+  border: none;
+  width: 40vw;
 }
