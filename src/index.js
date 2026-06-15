@@ -24,13 +24,12 @@ async function registerSW() {
 	await navigator.serviceWorker.register(stockSW);
 }
 
-function addWindow() {
-    const window = document.createElement("div");
-    window.id = "windowTab"
-    window.innerHTML = `
-    <iframe class="frame" src="./search.html"></iframe>
-    `
-    document.querySelector("#windowContainer").appendChild(window);
+function addWindowTab() {
+    const windowTab = document.createElement("div");
+    windowTab.id = "windowTab"
+    windowTab.innerHTML = `<iframe class="frame" src="./search.html"></iframe>`
+    document.querySelector("#windowContainer").appendChild(windowTab);
+    windowTab.style.animation = ".4s ease-out 0s 1 slideIn"
 }
 
 //Taken from ACE

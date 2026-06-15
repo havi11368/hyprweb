@@ -76,3 +76,21 @@ button {
   height: 100%;
   border: none;
 }
+
+@keyframes slideIn {
+  0% {
+    transform: scale(.5) perspective(300px) rotateY(-20deg);
+    opacity: 0;
+    width: 0%;
+  }
+
+  70% {
+    opacity: 1;
+  }
+
+  100% {
+    transform: scale(1);
+    opacity: 1;
+    width: 100;
+  }
+}
