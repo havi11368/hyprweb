@@ -23,24 +23,3 @@ async function registerSW() {
 
 	await navigator.serviceWorker.register(stockSW);
 }
-
-function addWindow() {
-    const window = document.createElement("div");
-    window.id = "windowTab"
-    window.innerHTML = `
-    <iframe class="frame" src="./search.html"></iframe>
-    `
-    document.querySelector("#windowContainer").appendChild(window);
-}
-
-//Taken from ACE
-
-async function setTransport() {
-
-  const connection = new BareMux.BareMuxConnection("/baremux/worker.js")
-  const wispUrl = "wss://lrga.space/wisp/";
-
-    await connection.setTransport("/epoxy/index.mjs", [{ wisp: wispUrl }]);
-
-}
-setTransport()
