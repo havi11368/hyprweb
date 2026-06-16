@@ -33,6 +33,7 @@ app.use(cors());
 
 server.on("request", (req, res) => {
   if (bare.shouldRoute(req)) {
+    res.setHeader("Service-Worker-Allowed", "/");
     bare.routeRequest(req, res);
   } else {
     res.setHeader("Service-Worker-Allowed", "/");
@@ -55,6 +56,7 @@ server.on("upgrade", (req, socket, head) => {
 
 // Error for everything else
 app.use((req, res) => {
+  res.setHeader("Service-Worker-Allowed", "/");
   res.status(404);
   res.sendFile(join(publicPath, "404.html"));
 });
