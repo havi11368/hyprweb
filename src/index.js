@@ -1,4 +1,7 @@
 function addWindowTab() {
+    if(document.getElementById("greeting").style.display == "block") {
+      document.getElementById("greeting").style.display = "none"
+    }
     const windowTab = document.createElement("div");
     windowTab.id = "windowTab"
     windowTab.innerHTML = `<iframe class="frame" src="./search.html"></iframe>`
