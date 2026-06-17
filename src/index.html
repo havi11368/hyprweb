@@ -5,11 +5,11 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <link rel="stylesheet" href="stylesheet.css">
   <title>HyprProxy</title>
-	<script src="/baremux/index.js"></script>
-	<script src="/epoxy/index.js"></script>
-	<script src="register-sw.js"></script>
-  <script src="/scram/scramjet.all.js"></script>
-  <script src="setTransport.js"></script>
+	<script src="/baremux/index.js" defer></script>
+	<script src="/epoxy/index.js" defer></script>
+  <script src="/scram/scramjet.all.js" defer></script>
+	<script src="register-sw.js" defer></script>
+  <script src="setTransport.js" defer></script>
 </head>
 <body>
     <div id="tabBar" class="justified">
@@ -29,6 +29,11 @@
       </div>
     </div>
     <div id="windowContainer">
+    </div>
+    <div class="centered container" style="z-index: -1;">
+      <h2>Welcome to HyprProxy</h2>
+      <br></br>
+      <p>Open a window using the "Add Window" button on the top bar and then search something to get started.</p>
     </div>
 </body>
 <script src="index.js"></script>

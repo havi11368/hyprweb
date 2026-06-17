@@ -27,6 +27,14 @@ p {
               translate(-50%, -50%);
 }
 
+.container {
+  transition: all .4s;
+  display: flex;
+  backdrop-filter: blur(10px);
+  border-radius: 5px;
+  outline: 2px solid var(--secondary-color);
+}
+
 .justified {
   height: auto;
   justify-content:center;
