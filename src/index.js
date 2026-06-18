@@ -23,6 +23,14 @@ function addWindowTab() {
     })
 }
 
+function openSettings() {
+  if (window.getComputedStyle(document.getElementById("settings")).display === "none") {
+    document.getElementById("settings").style.display = "block"
+  } else {
+    document.getElementById("settings").style.display = "none"
+  }
+}
+
 
 
 //Taken from ACE

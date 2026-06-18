@@ -25,7 +25,8 @@
         <button>Enter</button>
       </div>
       <div id="info">
-        <h3 id="time">6:07</h3>
+        <button onclick="openSettings()">Settings</button>
+        <h3 id="time">Loading...</h3>
       </div>
     </div>
     <div id="windowContainer">
@@ -37,6 +38,15 @@
         <a href="https://discord.gg/5MkFhwnYqx">Join Discord Server</a>
         <a href="https://discord.gg/5MkFhwnYqx">Github Repository</a>
       </div>
+    </div>
+    <div id="settings" class="centered container" style="display: none;">
+      <h2 style="font-weight: 700;">Settings</h2>
+      <h3 style="font-weight: 700;">Set Transport</h3>
+      <select>
+        <option>Epoxy Transport (Default)</option>
+        <option>Curl Transport</option>
+        <option>Bare Server</option>
+      </select>
     </div>
 </body>
 <script src="index.js"></script>

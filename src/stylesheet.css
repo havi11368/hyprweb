@@ -30,12 +30,9 @@ p {
 
 .container {
   transition: all .4s;
-  display: flex;
   backdrop-filter: blur(10px);
   border-radius: 5px;
   outline: 2px solid var(--secondary-color);
-  width: 500px;
-  height: 150px;
   opacity: 1;
 }
 
@@ -67,6 +64,12 @@ button {
   color: #fff;
   background: none;
   cursor: pointer;
+}
+
+#greeting {
+    display: flex;
+    width: 500px;
+    height: 150px;
 }
 
 #tabBar {
@@ -197,6 +200,7 @@ a {
   font-weight: 600;
   text-decoration: none;
   transition: .4s all;
+  color: var(--primary-color);
 }
 
 a:hover {
@@ -209,4 +213,11 @@ a:hover {
   justify-self: flex-end;
   align-items: flex-end;
   align-self: flex-end;
+}
+
+select {
+  background: none;
+  color: #fff;
+  outline: 1px solid var(--primary-color);
+  border-radius: 5px;
 }
