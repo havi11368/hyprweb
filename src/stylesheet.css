@@ -203,3 +203,10 @@ a:hover {
   font-weight: 700;
   text-decoration: underline;
 }
+
+#closeButton {
+  display: flex;
+  justify-self: flex-end;
+  align-items: flex-end;
+  align-self: flex-end;
+}

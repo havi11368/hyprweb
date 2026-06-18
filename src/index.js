@@ -6,6 +6,7 @@ function addWindowTab() {
     <img id="icon" src="/images/icon.png"></img>
     <h3 id="title">New Window</h3>
     </div>
+    <button id="closeButton">Close</button>
     </div>
     <iframe class="frame" src="./search.html"></iframe>`
     document.querySelector("#windowContainer").appendChild(windowTab);
@@ -17,7 +18,9 @@ function addWindowTab() {
     } else {
       windowTab.style.animation = ".4s ease-out 0s 1 slideIn";
     }
-    
+    windowTab.querySelector("#closeButton").addEventListener("click", (e) => {
+      windowTab.remove();
+    })
 }
 
 
