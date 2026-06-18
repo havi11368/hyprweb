@@ -12,6 +12,7 @@ function addWindowTab() {
     if (window.getComputedStyle(document.getElementById("greeting")).opacity === "1") {
       document.getElementById("greeting").style.animation = ".4s ease-out 0s 1 sizeOut";
       document.getElementById("greeting").style.opacity = "0";
+      document.getElementById("greeting").style.zIndex = "-1";
       windowTab.style.animation = ".4s ease-out 0s 1 sizeIn";
     } else {
       windowTab.style.animation = ".4s ease-out 0s 1 slideIn";

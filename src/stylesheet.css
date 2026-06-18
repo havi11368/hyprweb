@@ -192,3 +192,14 @@ button {
 #icon {
   height: 23px;
 }
+
+a {
+  font-weight: 600;
+  text-decoration: none;
+  transition: .4s all;
+}
+
+a:hover {
+  font-weight: 700;
+  text-decoration: underline;
+}
